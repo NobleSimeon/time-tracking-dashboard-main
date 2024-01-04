@@ -1,0 +1,232 @@
+:root {
+    --primary-Blue: hsl(246, 80%, 60%);
+
+    --primary-work: hsl(15, 100%, 70%);
+    --primary-play: hsl(195, 74%, 62%);
+    --primary-study: hsl(348, 100%, 68%);
+    --primary-exercise: hsl(145, 58%, 55%);
+    --primary-social: hsl(264, 64%, 52%);
+    --primary-self-care: hsl(43, 84%, 65%);
+
+
+    --neutral-900: hsl(226, 43%, 10%);
+    --neutral-700: hsl(235, 46%, 20%);
+    --neutral-400: hsl(235, 45%, 61%);
+    --neutral-200: hsl(236, 100%, 87%);
+}
+
+/* Default Stlying */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  padding: 1em;
+  background-color: var(--neutral-900);
+  color: white;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Utility Class */
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Stlying proper */
+main {
+    --padding: 1.5em;
+    display: grid;
+    gap: 1.2rem;
+
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    header {
+        grid-column: span 2;
+    }
+}
+@media screen and (min-width: 680px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    header {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .heading {
+        flex-direction: column;
+        align-items: start;
+    }
+    .about__avatar h1 {
+        line-break: break;
+    }
+    .tabs {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: start;
+    }
+}
+
+header {
+    background-color: var(--neutral-700);
+    border-radius: 1em;
+    overflow: hidden;
+
+    container-type: inline-size;
+}
+.heading {
+    gap: 1rem;
+    padding: 2em var(--padding);
+    border-radius: 1em;
+    background-color: var(--primary-Blue);
+}
+.image {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    padding: .1em;
+    border-radius: 100%;
+    background-color: white;
+}
+.about__avatar p {
+    font-size: .8rem;
+    color: var(--neutral-200);
+}
+.about__avatar h1 {
+    font-size: 1.2rem;
+    color: var(--neutral-200);
+}
+.tabs {
+    padding: var(--padding);
+    justify-content: space-between;
+}
+.tabs > * {
+    color: var(--neutral-400);
+    transition: color 0.3s ease;
+}
+.tabs > *:hover {
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1.5rem repeat(2, auto);
+    gap: 1rem;
+    border-radius: 1em;
+    background-position: top -5% right 8%;
+    background-repeat: no-repeat;
+
+    container-type: inline-size;
+}
+
+@container (max-width: 240px) {
+    .hours {
+        flex-direction: column;
+        align-items: start;
+        gap: .4rem;
+    }
+    .current-hours {
+        font-size: 2.5rem;
+    }
+    .tabs {
+        flex-direction: column;
+        align-items: start;
+        gap: 0.4rem;
+    }
+}
+.about {
+    grid-row: 2/-1;
+    padding: var(--padding);
+    background-color: var(--neutral-700);
+    border-radius: 1em;
+}
+.about > * {
+    justify-content: space-between;
+}
+.work {
+    background-color: var(--primary-work);
+    background-image: url(/images/icon-work.svg);
+}
+.play{
+    background-color: var(--primary-play);
+    background-image: url(/images/icon-play.svg);
+}
+.study {
+    background-color: var(--primary-study);
+    background-image: url(/images/icon-study.svg);
+}
+.exercise {
+    background-color: var(--primary-exercise);
+    background-image: url(/images/icon-exercise.svg);
+}
+.social{
+    background-color: var(--primary-social);
+    background-image: url(/images/icon-social.svg);
+}
+.self-care {
+    background-color: var(--primary-self-care);
+    background-image: url(/images/icon-self-care.svg);
+}
+
+.section__heading h2 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.hours {
+    margin-top: .5rem;
+}
+.current-hours {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.previous-hours {
+    font-size: .7rem;
+    color: var(--neutral-200);
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

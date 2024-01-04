@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="heading flex">
+          <div class="image">
+            <img src="/images/image-jeremy.png" alt="Avatar" />
+          </div>
+
+          <div class="about__avatar">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="tabs flex">
+          <button class="active">Daily</button>
+          <button>Weekly</button>
+          <button>Monthly</button>
+        </div>
+      </header>
+
+      <section class="work" id="work">
+        <div class="about about__work">
+          <div class="section__heading flex">
+            <h2>Work</h2>
+            <button>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hours work__hours flex">
+            <p class="current-hours">__hrs</p>
+            <p class="previous-hours">Last __ - __hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="play" id="play">
+        <div class="about about__play">
+          <div class="section__heading flex">
+            <h2>play</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="hours play__hours flex">
+            <p class="current-hours">__hrs</p>
+            <p class="previous-hours">Last __ - __hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="study" id="study">
+        <div class="about about__study">
+          <div class="section__heading flex">
+            <h2>study</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="hours study__hours flex">
+            <p class="current-hours">__hrs</p>
+            <p class="previous-hours">Last __ - __hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="exercise" id="exercise">
+        <div class="about about__exercise">
+          <div class="section__heading flex">
+            <h2>exercise</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="hours exercise__hours flex">
+            <p class="current-hours">__hrs</p>
+            <p class="previous-hours">Last __ - __hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="social" id="social">
+        <div class="about about__social">
+          <div class="section__heading flex">
+            <h2>social</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="hours social__hours flex">
+            <p class="current-hours">__hrs</p>
+            <p class="previous-hours">Last __ - __hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="self-care" id="self-care">
+        <div class="about about__self-care">
+          <div class="section__heading flex">
+            <h2>Self care</h2>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="hours self-care__hours flex">
+            <p class="current-hours">__hrs</p>
+            <p class="previous-hours">Last __ - __hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Simeon</a>.
+    </div>
+  </body>
+</html>
